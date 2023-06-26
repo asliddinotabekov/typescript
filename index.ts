@@ -1,68 +1,42 @@
 
-// interface user {
-//    readonly name : string ,
-// }
- 
 
-// interface gemera extends user{
-//     age : number ,
-// }
+const getData = (a:string |number) =>{
+  typeof a !== "number" && a.repeat(3)
+}
 
-// interface hone extends gemera, user {
-// }
-// // type usr = {
-// //     name : string 
-// // }
-
-// let obj :hone = {
-//     name : "Asliddin",
-//     age : 18.5,
-// }
-// interface  writtable{
-//     name ?: string, 
-//     age ?: number 
-// } 
-
-// let ow:writtable = obj
-
-// console.log(ow.name  = " assadfaffafsa")
-
-
-// interface Props<Type,OutLet > {
-//     age: Type;
-//     name: OutLet
-//     check ?: ()=> void
-//     [index:string ] :string | undefined| Function|Type |OutLet
-// }
-
-// let obj :Props<number,string> = {
-//     age: 12121,
-//     name : "Asliddin",
-//     check:()=>{
-//         return true
-//     }
+const Check = (a:string  | null | string[]) =>{
+    if(a){
+        for(let i of a){
+            console.log(i)
+        }
     
-// }
+  }}
 
-// interface user {
-//      age ?: number, 
+  function time (key:string): string{
+    let data = new Date 
 
-// }
+    switch(key){
+        case "ll" :
+            return `${data.getDate()} ${data.getDay()} ${data.getFullYear()}`
+        case "l" :
+            return `${data.getDate()} ${data.getDay()}`
+        default : return `${data.getDate()} ${data.getDay()}`
+    }
+  }
+// console.log(time("ll"))
+// console.log(time("l"))
 
-// class Person  implements user {
-//     constructor(name: string){}
-//     #name = "Web";
-//     private title  = "webbrain "
-//     age = 12121
-//     getData (){
-//         console.log(this.#name, this.title)
-//     }
-// }
+function get (str?: string){
+    let title : string = str!;  
+    if(typeof str === "string" ){
 
-// let person = new Person("webba")
-// console.log(person.getData())
+    }
+}
 
+function gets ():unknown{
+    throw new Error ("SDFASFASfa")
+}
 
-type courses = "frontrend" | "backend" | "mobile"
+// never  hichnima qaytarilmaydi 
 
-let course : courses = "mobile"
+let man :never 
