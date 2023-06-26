@@ -1,37 +1,68 @@
-let usr  = {name:"webbrain" , age:111 }
-let title : string = "Webbrain"
-title = "adasdsa"
-let anyData : any = "wwww"
-anyData= Boolean
-let anyDataAr: [] =[]
-anyDataAr = []
 
-// union
+// interface user {
+//    readonly name : string ,
+// }
+ 
 
-let union : string | number  = "Asliddin"
-// union = true
+// interface gemera extends user{
+//     age : number ,
+// }
 
-let arUnion : [string | number]= [11]
-arUnion = ["Webb"]
+// interface hone extends gemera, user {
+// }
+// // type usr = {
+// //     name : string 
+// // }
 
-let arUnionAny : any[string | number]= [false] // ichidagilarni atkaz qilib yuboradi 
+// let obj :hone = {
+//     name : "Asliddin",
+//     age : 18.5,
+// }
+// interface  writtable{
+//     name ?: string, 
+//     age ?: number 
+// } 
 
-// Tyuple
-let tuple :[string,number][] ;
+// let ow:writtable = obj
 
-tuple =[["sdsds",1212],["sdsds",1212]]
+// console.log(ow.name  = " assadfaffafsa")
 
-// Enum
 
-enum dir {
-    up=2,
-    down
-}
-console.log(dir.up,dir.down)
-// drop down uchun ishlatiladi 
+// interface Props<Type,OutLet > {
+//     age: Type;
+//     name: OutLet
+//     check ?: ()=> void
+//     [index:string ] :string | undefined| Function|Type |OutLet
+// }
 
-let id : any  =123
-let uId  = <string>id
-let uIds  = id as number
-uId = '111'
-uIds = 1111
+// let obj :Props<number,string> = {
+//     age: 12121,
+//     name : "Asliddin",
+//     check:()=>{
+//         return true
+//     }
+    
+// }
+
+// interface user {
+//      age ?: number, 
+
+// }
+
+// class Person  implements user {
+//     constructor(name: string){}
+//     #name = "Web";
+//     private title  = "webbrain "
+//     age = 12121
+//     getData (){
+//         console.log(this.#name, this.title)
+//     }
+// }
+
+// let person = new Person("webba")
+// console.log(person.getData())
+
+
+type courses = "frontrend" | "backend" | "mobile"
+
+let course : courses = "mobile"
