@@ -1,87 +1,68 @@
 
-// function getData (){}
-// console.log(getData()) //undefined return qilmadi 
+// interface user {
+//    readonly name : string ,
+// }
+ 
 
-// getData()
+// interface gemera extends user{
+//     age : number ,
+// }
 
-function SetData (a:number,b:number): number | void {
+// interface hone extends gemera, user {
+// }
+// // type usr = {
+// //     name : string 
+// // }
 
-    // return a ** b
-}
-// funcsiyada boshqa bir funcsiya kelishiga callback func deyiladi 
+// let obj :hone = {
+//     name : "Asliddin",
+//     age : 18.5,
+// }
+// interface  writtable{
+//     name ?: string, 
+//     age ?: number 
+// } 
 
-// console.log(SetData (25,2))
+// let ow:writtable = obj
+
+// console.log(ow.name  = " assadfaffafsa")
 
 
-/// =========== Call Back  = =================
+// interface Props<Type,OutLet > {
+//     age: Type;
+//     name: OutLet
+//     check ?: ()=> void
+//     [index:string ] :string | undefined| Function|Type |OutLet
+// }
 
-
-// type param = {
-    //     key: string,
-    //     value?: number // bermasa ham boladi 
-    // }
+// let obj :Props<number,string> = {
+//     age: 12121,
+//     name : "Asliddin",
+//     check:()=>{
+//         return true
+//     }
     
-    // const callback = (prop:param):CallProp =>{
-        //     return (a:number) => a
-        // }
-        // console.log(callback({key:"asas",value:1212}))
-
-
-        
-// type CallProp = {
-//     new () : Object
 // }
 
+// interface user {
+//      age ?: number, 
 
-// const getData = (fn:CallProp) : string=>{
-//     return new fn().toString()
 // }
 
-// function ConstFun(){
-//     return  Date
+// class Person  implements user {
+//     constructor(name: string){}
+//     #name = "Web";
+//     private title  = "webbrain "
+//     age = 12121
+//     getData (){
+//         console.log(this.#name, this.title)
+//     }
 // }
 
-// console.log(getData(ConstFun()))
-
-//  let ar : string[] = []
-//   function Generic(value : string ,ar:string[]) {
-//     ar.push(value)
-//     console.log(ar)
-
-//   }
-
-//   Generic("frontend",ar)
-
-// let ar : string[] = []
+// let person = new Person("webba")
+// console.log(person.getData())
 
 
+type courses = "frontrend" | "backend" | "mobile"
 
-// function Generic<Type,OutSet>( ar:Type[]) {
-//   return (value : Type) : OutSet | string=> {
-//       ar.push(value)
-//       console.log(ar)
-//       return 'sd'
-// }
-// }
-
-// const stArra =Generic<string,number>([])
-// const numArra =Generic<number,number>([])
-// stArra("Frontend")
-// numArra(1111)
-
-// function getData<Type extends {length: number}>(a:Type){
-    
-//     console.log(a.length)
-// }
-
-// getData<string>("asliddin")
-// getData<number[]>([1,2,3,4])
-// getData<number>(1)
-
-function getData (a:string):string;
-function getData (a:string , b:string, c:string):string;
-function getData (a?:string , b?:string, c?:string){
-    return "str"
-}
-
-console.log(getData("dasad","sada","scsc"))
+let course : courses = "mobile"
