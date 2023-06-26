@@ -1,7 +1,9 @@
 
 
 const getData = (a:string |number) =>{
-  typeof a !== "number" && a.repeat(3)
+  if(typeof a !== "number") {
+    a.length   
+} 
 }
 
 const Check = (a:string  | null | string[]) =>{
@@ -39,4 +41,5 @@ function gets ():unknown{
 
 // never  hichnima qaytarilmaydi 
 
-let man :never 
+let man :never ;
+//  hechqanday qiymatga qaytmaydi bu ayb bizda emas😂😂😂😂

@@ -1,28 +1,30 @@
-var getData = function (a) {
-    typeof a !== "number" && a.repeat(3);
+"use strict";
+const getData = (a) => {
+    if (typeof a !== "number") {
+        a.length;
+    }
 };
-var Check = function (a) {
+const Check = (a) => {
     if (a) {
-        for (var _i = 0, a_1 = a; _i < a_1.length; _i++) {
-            var i = a_1[_i];
+        for (let i of a) {
             console.log(i);
         }
     }
 };
 function time(key) {
-    var data = new Date;
+    let data = new Date;
     switch (key) {
         case "ll":
-            return "".concat(data.getDate(), " ").concat(data.getDay(), " ").concat(data.getFullYear());
+            return `${data.getDate()} ${data.getDay()} ${data.getFullYear()}`;
         case "l":
-            return "".concat(data.getDate(), " ").concat(data.getDay());
-        default: return "".concat(data.getDate(), " ").concat(data.getDay());
+            return `${data.getDate()} ${data.getDay()}`;
+        default: return `${data.getDate()} ${data.getDay()}`;
     }
 }
 // console.log(time("ll"))
 // console.log(time("l"))
 function get(str) {
-    var title = str;
+    let title = str;
     if (typeof str === "string") {
     }
 }
@@ -30,4 +32,5 @@ function gets() {
     throw new Error("SDFASFASfa");
 }
 // never  hichnima qaytarilmaydi 
-var man;
+let man;
+//  hechqanday qiymatga qaytmaydi bu ayb bizda emas😂😂😂😂
